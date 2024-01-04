@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import "./styles/Login.css"; // Import the CSS file
 import Logo from "../assets/logologin.png";
-const Home = (props) => {
+const Home = ({ connectWallet }) => {
   return (
     <div className="container">
       <div className="flex">
@@ -14,7 +15,7 @@ const Home = (props) => {
             Gerbang Suara adalah aplikasi e-voting berbasis Blockchain dengan
             mengutamakan kerahasiaan dan keamanan
           </p>
-          <button className="login-button" onClick={props.connectWallet}>
+          <button className="login-button" onClick={connectWallet}>
             Login MetaMask
           </button>
         </div>

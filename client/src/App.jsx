@@ -1,20 +1,25 @@
-import { useContract } from "./Contract";
-import Connected from "./components/Connected";
-import Login from "./components/Login";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout";
+import Vote from "./components/Vote";
 
 function App() {
-  const { contract, signerAddress, connectToMetamask, isConnected } =
-    useContract();
-
-  return (
-    <div>
-      {isConnected ? (
-        <Connected signerAddress={signerAddress} contract={contract} />
-      ) : (
-        <Login connectWallet={connectToMetamask} />
-      )}
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Vote />,
+        },
+        // {
+        //   path: "about",
+        //   element: <About />,
+        // },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

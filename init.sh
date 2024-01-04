@@ -7,9 +7,9 @@ echo "Compilation completed."
 
 # Step 2: Move contents from artifacts/contracts to client/src/contractJson/
 echo "Step 2: Moving contract artifacts..."
-mkdir -p client/src/contractJson
+mkdir -p client/src/contracts
 cp -r artifacts/contracts/Election.sol/* client/src/contracts/
-echo "Contract artifacts moved to client/src/contractJson/."
+echo "Contract artifacts moved to client/src/contracts/."
 
 # Step 3: Run deployment script using npx hardhat run scripts/deploy.js
 echo "Step 3: Running deployment script..."

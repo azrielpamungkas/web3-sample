@@ -1,0 +1,19 @@
+https://github.com/azrielpamungkas/web3-sample
+
+Guide:
+1. install ganache
+2. ⁠install depedency npm i
+  3. buat file .env
+
+GOERLI_URL=http://127.0.0.1:7545 —seseuaike jika beda
+PRIVATE_KEY=0c8df7360fafa32aae694fd62c6704d9694afd824ee7d4ed164604bcb89083953 — contoh private key
+
+
+dapetin private key:
+
+1. pilih akun di ganache klik dibagian kanan icon key
+2. ⁠Copy private key
+3. ⁠paste key masukin import add account di metamask
+4. ⁠ubah network metamask ke ganache (https://docs.cranq.io/web-3/setting-up-ganache-with-metamask)
+5. ⁠ambil private key dari metamask (https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key#:~:text=On%20the%20%27Account%20details%27%20page,to%20display%20your%20private%20key.)
+6. ⁠masukin ke .env

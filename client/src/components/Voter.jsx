@@ -26,9 +26,7 @@ const Voter = (props) => {
             <input type="checkbox" id="candidate1" className="checkbox-input" />
             <div className="checkbox-tile">
               <label htmlFor="candidate1" className="checkbox-label">
-                <div className="checkbox-icon">
-                  
-                </div>
+                <div className="checkbox-icon"></div>
                 <p>Candidate 1</p>
               </label>
             </div>
@@ -39,9 +37,7 @@ const Voter = (props) => {
             <input type="checkbox" id="candidate2" className="checkbox-input" />
             <div className="checkbox-tile">
               <label htmlFor="candidate2" className="checkbox-label">
-                <div className="checkbox-icon">
-                  
-                </div>
+                <div className="checkbox-icon"></div>
                 <p>Candidate 2</p>
               </label>
             </div>

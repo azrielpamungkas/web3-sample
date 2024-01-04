@@ -1,6 +1,9 @@
 node_modules
 .env
 
+client/src/contracts
+client/src/getContracts.js
+
 # Hardhat files
 /cache
 /artifacts

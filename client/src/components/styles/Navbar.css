@@ -1,9 +1,14 @@
 header {
   height: 65px;
-  width: 100%;
+  width: 98%;
   padding: 0 20px;
-  background-color: #0a192f;
+  background-color: #0F1035;
   top: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .crop-logo {
@@ -43,3 +48,11 @@ header {
 .header-right a:hover {
   background-color: black;
 }
+
+@media screen and (max-width: 768px) {
+   header {
+    width: auto;
+   }
+}
+
+

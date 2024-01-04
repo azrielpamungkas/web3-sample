@@ -4,26 +4,17 @@ import Logo from "../assets/logologin.png";
 const Home = ({ connectWallet }) => {
   return (
     <div className="container">
-      <div className="flex">
-        {/* First Column */}
-        <div className="flex-1">
-          <h1 className="heading1">
-            Welcome to Decentralized Voting Application👋
-          </h1>
-          <h2 className="heading2">Gerbang Suara</h2>
-          <p className="text-description">
-            Gerbang Suara adalah aplikasi e-voting berbasis Blockchain dengan
-            mengutamakan kerahasiaan dan keamanan
-          </p>
+      <div className="wrap">
+        <div className="heading-one">
+          <h1 className="heading-one-title-login">Welcome to Decentralized Voting Application👋</h1>
+          <h2 className="heading-one-connect">Demokrasi tanpa keraguan</h2>
+          <p className="text-description-login"> Gerbang Suara adalah aplikasi e-voting berbasis Blockchain dengan mengutamakan kerahasiaan dan keamanan</p>
           <button className="login-button" onClick={connectWallet}>
-            Login MetaMask
+             Login MetaMask
           </button>
         </div>
-
-        {/* Second Column */}
-        <div className="flex-1">
-          {/* Add your image here */}
-          <img src={Logo} alt="Logo" />
+        <div className="heading-two">
+          <img src={Logo} alt="Logo Login Page" />
         </div>
       </div>
     </div>

@@ -1,78 +1,103 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    background-color: #0a192f;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 
 .container {
-  max-width: 1300px;
-  margin: 150px 0px 0px 150px;
-  padding: 0 8px;
-  background-color: #0a192f;
+  height: 91vh;
+  padding: 0 20px;
+  background-color: #0f1035;
 }
 
-.heading1 {
-  font-weight: bold;
-  color: white;
-  font-size: 40px;
-  margin-top: 80px;
+.heading-one {
+  padding: 20px;
 }
 
-.heading2 {
-  margin-top: 2px;
-  font-size: 30px;
-  font-weight: bold;
+.heading-one-title {
+  color: #ccd6f6;
+  font-size: 70px;
+}
+
+.heading-two {
+  padding: 10px;
+  padding-left: 120px;
+}
+
+.heading-one-connect {
+  color: #8892b0;
+}
+
+.heading-one-title-login{
   color: #ccd6f6;
 }
 
 .text-description {
   font-size: 16px;
-  color: #818181;
+  color: white;
+  font-weight: bold;
 }
 
-.login-button {
-  color: #fff;
+.login-button{
   padding: 10px 20px;
-  border: 1px solid #ffffff;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.login-button:hover {
-  color: #000000;
+  border: 2px solid #000000;
   background-color: white;
-  border:#000000;
 }
 
-.flex {
+.login-button:hover{
+  color: white;
+  border: 2px solid white;
+  background-color: #0000 ;
+}
+
+.text-description-login {
+  font-size: 12px;
+  padding-top:5px;
+  padding-bottom:5px ;
+  color: #8892b0;
+}
+
+.wrap {
   display: flex;
+  padding-top: 81px;
+  padding-left: 120px;
 }
 
-.flex-1 {
-  flex: 1;
-  box-sizing: border-box;
-}
-
-/* Add your specific styling for the image */
-.flex-1 img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 200px;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .flex {
+@media screen and (max-width: 768px) {
+  .wrap {
+    padding-left: 0px;
     flex-direction: column;
   }
   .container {
-    margin: auto;
+    height: auto;
+    width: auto;
+    text-align: center;
   }
-  .flex-1 img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 0px;
+
+  .heading-one{
+    padding-left: 20px;
+  }
+
+  .heading-one-title {
+    color: white;
+    font-size: 70px;
+  }
+
+  .heading-two {
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 45px;
+  }
+
+  .heading-one-connect {
+    color: #818181;
+    font-size: 25px;
+  }
+
+  .text-description {
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
 }
 }

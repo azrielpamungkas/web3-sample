@@ -26,18 +26,14 @@ const Connected = ({ contract, signerAddress }) => {
 
   return (
     <div className="container">
-      <div className="flex">
-        {/* First Column */}
-        <div className="flex-1">
-          <h1 className="heading1">Gerbang Suara</h1>
-          <h2 className="heading2">You are Connected to MetaMask</h2>
-          <p className="text-description">Metamask Accout : {signerAddress}</p>
+      <div className="wrap">
+        <div className="heading-one">
+          <h1 className="heading-one-title">Gerbang Suara</h1>
+          <h2 className="heading-one-connect">You Are Connected to MetaMask</h2>
+          <p className="text-description">MetaMask Account : {signerAddress}</p>
         </div>
-
-        {/* Column ke dua*/}
-        <div className="flex-1">
-          {/* add image */}
-          <img src={Logo} alt="Logo" />
+        <div className="heading-two">
+          <img src={Logo} alt="Logo Login Page" />
         </div>
       </div>
     </div>

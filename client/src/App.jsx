@@ -5,7 +5,8 @@ import Memos from "./components/Memos";
 import Buy from "./components/Buy";
 import Vote from "./components/Vote";
 import About from './components/About'
-import Statistic from './components/Statistic'
+import Statistic from './components/Statistic';
+import Voter from './components/Voter';
 // import chai from "./chai.png";
 // import './App.css'
 
@@ -64,6 +65,7 @@ function App() {
       <Vote />
       <About/>
       <Statistic/>
+      <Voter/>
     </div>
   );
 }

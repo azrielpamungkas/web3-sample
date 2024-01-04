@@ -1,8 +1,8 @@
+// Statistik.jsx
+
 import React from "react";
 import "./styles/Statistic.css";
-
 import { Bar } from "react-chartjs-2";
-
 import faker from "faker";
 import {
   Chart as ChartJS,
@@ -33,7 +33,6 @@ const colorPalette = [
   "rgba(255, 99, 132, 0.5)",
   "rgba(75, 192, 192, 0.5)",
   "rgba(255, 205, 86, 0.5)",
-  // Tambahkan warna lain sesuai kebutuhan
 ];
 
 const data = {
@@ -61,7 +60,6 @@ export const options = {
 };
 
 const Statistik = () => {
-  // Pastikan memberikan nilai awal pada statistikData
   return (
     <div className="statisik">
       <div className="container-statistic">
@@ -72,9 +70,10 @@ const Statistik = () => {
           placeat aliquam consequatur maiores reprehenderit alias eligendi
           quibusdam qui tempore! Quibusdam.
         </p>
-        <div className="chart-container">
-          <Bar data={data} options={options} />
-        </div>
+          <div className="chart-container">
+            <Bar data={data} options={options} />
+          </div>
+
       </div>
     </div>
   );

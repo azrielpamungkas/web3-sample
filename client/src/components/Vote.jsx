@@ -104,6 +104,7 @@ function Vote() {
 
   return (
     <div className="App">
+       <Login connectWallet={connectToMetamask} />
        <Connected
             account={signerAddress}
             candidates={candidates}

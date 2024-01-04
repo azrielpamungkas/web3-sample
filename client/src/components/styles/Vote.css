@@ -1,0 +1,67 @@
+.container-voter {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+    
+  .heading-voter {
+    margin-bottom: 20px;
+  }
+  
+  .heading-voter h1 {
+    color: white;
+    display: inline; 
+    border-bottom: 4px solid #ff69b4;
+    font-size: 2rem; 
+  }
+  
+  .heading-voter h2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5rem; 
+  }
+  
+  .heading-voter p {
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+
+  .candidates {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+  }
+  
+
+  .candidate-card {
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+
+    background-color: white;
+  }
+  
+  .candidate-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .heading-voter h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .heading-voter h2 {
+      font-size: 1rem; 
+    }
+  }
+  

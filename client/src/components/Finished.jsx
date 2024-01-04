@@ -1,7 +1,23 @@
+import Logo from '../assets/logologin.png'
+
 const Finished = (props) => {
   return (
-    <div className="login-container">
-      <h1 className="welcome-message">Voting is Finished</h1>
+    <div className="container">
+      <div className="flex">
+        {/* First Column */}
+        <div className="flex-1">
+          <h1 className="heading1">
+            Gerbang Suara
+          </h1>
+          <h2 className="heading2">Voting is Finished</h2>
+        </div>
+
+        {/* Column ke dua*/}
+        <div className="flex-1">
+          {/* add image */}
+          <img src={Logo} alt="Logo" />
+        </div>
+      </div>
     </div>
   );
 };

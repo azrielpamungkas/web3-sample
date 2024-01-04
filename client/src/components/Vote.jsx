@@ -9,7 +9,7 @@ import Connected from "./Connected";
 function Vote() {
   const [contract, setContract] = useState(null);
   const contractAbi = abi.abi;
-  const contractAddress = "0x0fC2F3c5845e64A7dD6dd38bbB50F0112A25aF56";
+  const contractAddress = "0x2aA20305a6E6C9e24dFf975858CC4C51D75fF0De";
   const [isConnected, setIsConnected] = useState(false);
   const [isVoteActive, setIsVoteActive] = useState(false);
   const [isExist, setIsExist] = useState(false);
@@ -104,12 +104,21 @@ function Vote() {
 
   return (
     <div className="App">
-      {isConnected ? (
+       <Connected
+            account={signerAddress}
+            candidates={candidates}
+            // remainingTime={remainingTime}
+            number={number}
+            handleNumberChange={handleNumberChange}
+            voteFunction={vote}
+            isExist={isExist}
+          />
+      {/* {isConnected ? (
         isVoteActive ? (
           <Connected
             account={signerAddress}
             candidates={candidates}
-            remainingTime={remainingTime}
+            // remainingTime={remainingTime}
             number={number}
             handleNumberChange={handleNumberChange}
             voteFunction={vote}
@@ -120,7 +129,7 @@ function Vote() {
         )
       ) : (
         <Login connectWallet={connectToMetamask} />
-      )}
+      )} */}
     </div>
   );
 }

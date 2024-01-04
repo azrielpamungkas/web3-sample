@@ -1,45 +1,30 @@
+import Logo from "../assets/logologin.png";
+import "./styles/Login.css";
+
 const Connected = (props) => {
   return (
-    <div className="connected-container">
-      <h1 className="connected-header">You are Connected to Metamask</h1>
-      <p className="connected-account">Metamask Account: {props.account}</p>
-      <p className="connected-account">Remaining Time: {props.remainingTime}</p>
-      {props.isExist ? (
-        <p className="connected-account">You have already voted</p>
-      ) : (
-        <div>
-          <input
-            type="number"
-            placeholder="Entern Candidate Index"
-            value={props.number}
-            onChange={props.handleNumberChange}
-          ></input>
-          <br />
-          <button className="login-button" onClick={props.voteFunction}>
-            Vote
-          </button>
+    <>
+    <div className="container">
+      <div className="flex">
+        {/* First Column */}
+        <div className="flex-1">
+          <h1 className="heading1">
+            Gerbang Suara
+          </h1>
+          <h2 className="heading2">You are Connected to MetaMask</h2>
+          <p className="text-description">
+            Metamask Accout : {props.account}
+          </p>
         </div>
-      )}
 
-      <table id="myTable" className="candidates-table">
-        <thead>
-          <tr>
-            <th>Index</th>
-            <th>Candidate name</th>
-            <th>Candidate votes</th>
-          </tr>
-        </thead>
-        <tbody>
-          {props.candidates.map((candidate, index) => (
-            <tr key={index}>
-              <td>{candidate.index}</td>
-              <td>{candidate.name}</td>
-              <td>{candidate.voteCount}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+        {/* Column ke dua*/}
+        <div className="flex-1">
+          {/* add image */}
+          <img src={Logo} alt="Logo" />
+        </div>
+      </div>
     </div>
+    </>
   );
 };
 

@@ -1,0 +1,56 @@
+/* styles/About.css */
+
+.about-container {
+  width: 100%;
+  background-color: #0a192f;
+  color: white;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+}
+
+.content-grid {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+}
+
+.title-column {
+  text-align: center; 
+  padding-bottom: 8px;
+  padding: 20px 4px; 
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 4px solid #ff66b2;
+}
+
+.text-column1 {
+  font-size: 40px;
+  text-align: center; 
+  font-weight: bold;
+}
+
+.text-column {
+  font-size: 17px;
+  text-align: center; 
+}
+
+
+@media (min-width: 769px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .text-column {
+    text-align: left; 
+  }
+}

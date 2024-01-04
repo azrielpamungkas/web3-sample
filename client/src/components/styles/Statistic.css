@@ -1,0 +1,43 @@
+.statisik {
+    background-color: #0a192f;
+}
+
+.container-statistic {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    display: inline;
+    border-bottom: 4px solid #ff69b4;
+}
+
+.keterangan {
+    margin-top: 30px;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 60%;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #0a192f;
+}
+
+@media (min-width: 768px) {
+    .container-statistic {
+        padding: 100px;
+    }
+
+    .chart-container {
+        width: 80%; 
+        margin: auto;
+    }
+}

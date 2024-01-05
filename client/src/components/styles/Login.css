@@ -5,99 +5,81 @@
   margin: 0px;
 }
 
-.container {
-  height: 91vh;
-  padding: 0 20px;
-  background-color: #0f1035;
-}
-
-.heading-one {
-  padding: 20px;
-}
-
-.heading-one-title {
-  color: #ccd6f6;
-  font-size: 70px;
-}
-
-.heading-two {
-  padding: 10px;
-  padding-left: 120px;
-}
-
-.heading-one-connect {
-  color: #8892b0;
-}
-
-.heading-one-title-login{
-  color: #ccd6f6;
-}
-
-.text-description {
-  font-size: 16px;
-  color: white;
-  font-weight: bold;
-}
-
-.login-button{
-  padding: 10px 20px;
-  border: 2px solid #000000;
+.jumbotron {
   background-color: white;
+  display: grid;
+  grid-template-columns: 50% auto;
+  padding: 4em;
+  gap: 250px;
 }
 
-.login-button:hover{
+.text {
+  padding-top: 80px;
+  padding-right: 4px;
+  padding-left: 30px;
+}
+
+.text h1 {
+  color: #365486;
+  font-size: 60px;
+}
+
+.text h2 {
+  color: #7fc7d9;
+  font-size: 20px;
+}
+
+.text h3 {
+  margin-top: 20px;
+  color: rgb(38, 62, 83);
+}
+
+.text p {
+  color: rgb(38, 62, 83);
+}
+
+.text button {
+  margin-top: 10px;
   color: white;
-  border: 2px solid white;
-  background-color: #0000 ;
-}
-
-.text-description-login {
-  font-size: 12px;
-  padding-top:5px;
-  padding-bottom:5px ;
-  color: #8892b0;
-}
-
-.wrap {
-  display: flex;
-  padding-top: 81px;
-  padding-left: 120px;
-}
-
-@media screen and (max-width: 768px) {
-  .wrap {
-    padding-left: 0px;
-    flex-direction: column;
-  }
-  .container {
-    height: auto;
-    width: auto;
-    text-align: center;
-  }
-
-  .heading-one{
-    padding-left: 20px;
-  }
-
-  .heading-one-title {
-    color: white;
-    font-size: 70px;
-  }
-
-  .heading-two {
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 45px;
-  }
-
-  .heading-one-connect {
-    color: #818181;
-    font-size: 25px;
-  }
-
-  .text-description {
-  font-size: 10px;
-  color: white;
+  padding: 10px 20px;
+  background-color: #0f1035;
+  border-radius: 10px;
   font-weight: bold;
 }
+
+.text button:hover {
+  background-color: #1c1e50;
+}
+
+.imageprof img {
+  width: 315px;
+  height: auto;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .jumbotron {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .jumbotron .text {
+    margin: 2vh;
+    padding: 4vh;
+  }
+  .jumbotron .imageprof {
+    margin: 10vh;
+  }
+
+  .text {
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-left: 0px;
+  }
+
+  .text h1 {
+    color: #365486;
+    font-size: 40px;
+  }
 }

@@ -1,23 +1,22 @@
 /* eslint-disable react/prop-types */
 import "./styles/Login.css"; // Import the CSS file
-import Logo from "../assets/logologin.png";
+import Logo from "../assets/Gerbang Suara (5).png";
 const Home = ({ connectWallet }) => {
   return (
-    <div className="container">
-      <div className="wrap">
-        <div className="heading-one">
-          <h1 className="heading-one-title-login">Welcome to Decentralized Voting Application👋</h1>
-          <h2 className="heading-one-connect">Demokrasi tanpa keraguan</h2>
-          <p className="text-description-login"> Gerbang Suara adalah aplikasi e-voting berbasis Blockchain dengan mengutamakan kerahasiaan dan keamanan</p>
-          <button className="login-button" onClick={connectWallet}>
-             Login MetaMask
-          </button>
+    <>
+    <div className="jumbotron">
+        <div className="text">
+            <h1>Gerbang Suara</h1>  
+            <h2>Welcome to Decentralized Voting Application👋</h2>
+            <h3>Demokrasi Tanpa Keraguan</h3>
+            <p>Gerbang Suara adalah aplikasi e-voting berbasis Blockchain dengan mengutamakan kerahasiaan dan keamanan</p>
+            <button onClick={connectWallet}>Login MetaMask</button>
         </div>
-        <div className="heading-two">
-          <img src={Logo} alt="Logo Login Page" />
+        <div className="imageprof">
+            <img src={Logo} alt="Logo Gerbang Suara" />
         </div>
-      </div>
     </div>
+    </>
   );
 };
 

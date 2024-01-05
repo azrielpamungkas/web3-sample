@@ -1,78 +1,92 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    background-color: #0a192f;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 150px 0px 0px 150px;
-  padding: 0 8px;
-  background-color: #0a192f;
-}
-
-.heading1 {
-  font-weight: bold;
-  color: white;
-  font-size: 40px;
-  margin-top: 80px;
-}
-
-.heading2 {
-  margin-top: 2px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #ccd6f6;
-}
-
-.text-description {
-  font-size: 16px;
-  color: #818181;
-}
-
-.login-button {
-  color: #fff;
-  padding: 10px 20px;
-  border: 1px solid #ffffff;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.login-button:hover {
-  color: #000000;
+.jumbotron {
+  grid-template-columns: 50% auto;
+  display: grid;
+  height: 433px;
+  padding: 2em; 
+  gap: 10px; 
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  border:#000000;
 }
 
-.flex {
-  display: flex;
+.text {
+  padding-top: 80px;
+  padding-right: 4px;
+  padding-left: 30px;
 }
 
-.flex-1 {
-  flex: 1;
-  box-sizing: border-box;
+.text h1 {
+  color: #012169;
+  font-size: 50px;
+  display: inline;
+  border-bottom: 8px solid #F0B323;
 }
 
-/* Add your specific styling for the image */
-.flex-1 img {
-  max-width: 100%;
+.text h2 {
+  padding-top:15px;
+  color: #F7630c;
+  font-size: 20px;
+}
+
+.text h3 {
+  margin-top: 25px;
+  color: rgb(38, 62, 83);
+}
+
+.text p {
+  font-style:italic;
+  color: rgb(38, 62, 83);
+}
+
+.text button {
+  margin-top: 10px;
+  color: white;
+  padding: 10px 20px;
+  background-color: #0f1035;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.text button:hover {
+  background-color: #1c1e50;
+}
+
+.imageprof img {
+  width: 315px;
   height: auto;
-  margin-left: 200px;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
+  .jumbotron {
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
-  .container {
-    margin: auto;
+  .jumbotron .text {
+    margin: 2vh;
+    padding: 4vh;
   }
-  .flex-1 img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 0px;
-}
+  .jumbotron .imageprof {
+    margin: 10vh;
+  }
+
+  .text {
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-left: 0px;
+  }
+
+  .text h1 {
+    color: #365486;
+    font-size: 40px;
+  }
 }

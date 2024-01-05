@@ -13,6 +13,7 @@ function Vote() {
       ) : (
         <Login connectWallet={connectToMetamask} />
       )}
+      {/* <Login connectWallet={connectToMetamask} /> */}
     </div>
   );
 }

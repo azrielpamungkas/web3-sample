@@ -1,6 +1,4 @@
 // Statistik.jsx
-
-import React from "react";
 import "./styles/Statistic.css";
 import { Bar } from "react-chartjs-2";
 import faker from "faker";
@@ -61,22 +59,23 @@ export const options = {
 
 const Statistik = () => {
   return (
-    <div className="statisik">
-      <div className="container-statistic">
-        <h1 className="title">Statistik Pemilihan</h1>
-        <p className="keterangan">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nam
-          nulla sed odio libero voluptates, amet vitae, incidunt, dolorum
-          placeat aliquam consequatur maiores reprehenderit alias eligendi
-          quibusdam qui tempore! Quibusdam.
-        </p>
-          <div className="chart-container">
-            <Bar data={data} options={options} />
-          </div>
-
+    <>
+      <div className="jumbotron-statistic">
+        <div className="heading-statistic">
+          <h1>Statistik Sistem</h1>
+          <h3>Demokrasi Milenial</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            eaque!
+          </p>
+        </div>
+        <div className="chart-container">
+          <Bar data={data} options={options} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default Statistik;
+

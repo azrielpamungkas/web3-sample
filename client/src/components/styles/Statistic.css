@@ -1,43 +1,31 @@
-.statisik {
-    background-color: #0a192f;
+.jumbotron-statistic {
+  padding: 2em;
 }
 
-.container-statistic {
-    color: white;
-    text-align: center;
-    padding: 20px;
+.heading-statistic {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.title {
-    font-size: 2.25rem;
-    font-weight: bold;
-    display: inline;
-    border-bottom: 4px solid #ff69b4;
+.heading-statistic h1 {
+  color: #012169;
+  display: inline;
+  border-bottom: 5px solid #f0b323;
 }
 
-.keterangan {
-    margin-top: 30px;
+.heading-statistic h3 {
+  padding-top: 10px;
+  color: #012169;
+}
+
+.heading-statistic p {
+  color: rgb(38, 62, 83);
 }
 
 .chart-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-    height: 60%;
-    margin: 20px auto; 
-    padding: 20px;
-    background-color: #0a192f;
+  height: 10%;
+  background-color: white;
+  width: 50%;
+  margin: auto;
 }
 
-@media (min-width: 768px) {
-    .container-statistic {
-        padding: 100px;
-    }
-
-    .chart-container {
-        width: 80%; 
-        margin: auto;
-    }
-}

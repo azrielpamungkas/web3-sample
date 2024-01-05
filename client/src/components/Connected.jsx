@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Logo from "../assets/Gerbang Suara (5).png";
+import Logo from "../assets/gerbangsuara.png";
 import "./styles/Login.css";
 import { useEffect } from "react";
 import { ethers } from "ethers";
@@ -30,7 +30,8 @@ const Connected = ({ contract, signerAddress }) => {
         <div className="text">
             <h1>Gerbang Suara</h1>  
             <h2>You Are Connected to Metamask 🦊</h2>
-            <p>Metamask Account : {signerAddress}</p>
+            <p>Metamask Account : </p>
+            <p>{signerAddress}</p>
         </div>
         <div className="imageprof">
             <img src={Logo} alt="Logo Gerbang Suara" />
@@ -42,15 +43,3 @@ const Connected = ({ contract, signerAddress }) => {
 
 export default Connected;
 
-    // <div className="container">
-    //   <div className="wrap">
-    //     <div className="heading-one">
-    //       <h1 className="heading-one-title">Gerbang Suara</h1>
-    //       <h2 className="heading-one-connect">You Are Connected to MetaMask</h2>
-    //       <p className="text-description">MetaMask Account : {signerAddress}</p>
-    //     </div>
-    //     <div className="heading-two">
-    //       <img src={Logo} alt="Logo Login Page" />
-    //     </div>
-    //   </div>
-    // </div>

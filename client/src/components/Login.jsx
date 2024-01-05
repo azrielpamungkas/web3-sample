@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./styles/Login.css"; // Import the CSS file
-import Logo from "../assets/Gerbang Suara (5).png";
+import Logo from "../assets/gerbangsuara.png";
 const Home = ({ connectWallet }) => {
   return (
     <>

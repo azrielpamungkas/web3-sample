@@ -1,47 +1,56 @@
 /* Voter.jsx */
 
-import React from "react";
 import "./styles/Vote.css";
 
 const Voter = (props) => {
+  
   return (
     <>
-      <div className="container-voter">
+      <div className="jumbotron-voter">
         <div className="heading-voter">
-          <h1>Voting</h1>
-          <h2>Silahkan Pilih Jagoan Anda !</h2>
+          <h1>Voting Sistem</h1>
+          <h3>Silahkan pilih jagoanmu !</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex in
-            tempora ipsum, delectus voluptatem magni? Quia incidunt itaque
-            consectetur ducimus assumenda recusandae ut omnis repellat
-            repudiandae! Hic quidem, error repellendus architecto exercitationem
-            deserunt voluptatibus non veritatis doloremque iusto perspiciatis
-            eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            eaque!
           </p>
         </div>
 
-        <div className="candidates">
-          {/* Card 1 */}
-          <div className="candidate-card">
-            <input type="checkbox" id="candidate1" className="checkbox-input" />
-            <div className="checkbox-tile">
-              <label htmlFor="candidate1" className="checkbox-label">
-                <div className="checkbox-icon"></div>
-                <p>Candidate 1</p>
+        {/* Testing */}
+        <div className="row">
+            <div className="card">
+              <input
+                type="radio"
+                name="card-option"
+                className="card-radio"
+                id="option2"
+              />
+              <label htmlFor="option2" className="card-label">
+                Azriel Sebastian Pamungkas
               </label>
             </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="candidate-card">
-            <input type="checkbox" id="candidate2" className="checkbox-input" />
-            <div className="checkbox-tile">
-              <label htmlFor="candidate2" className="checkbox-label">
-                <div className="checkbox-icon"></div>
-                <p>Candidate 2</p>
+            <div className="card">
+              <input
+                type="radio"
+                name="card-option"
+                className="card-radio"
+                id="option1"
+              />
+              <label htmlFor="option1" className="card-label">
+                Sindu Aditya Janadi
               </label>
             </div>
-          </div>
+            <div className="card">
+              <input
+                type="radio"
+                name="card-option"
+                className="card-radio"
+                id="option3"
+              />
+              <label htmlFor="option3" className="card-label">
+                Jovan Santosa
+              </label>
+            </div>
         </div>
       </div>
     </>

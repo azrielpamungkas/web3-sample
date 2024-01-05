@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65px;
-  width: 98%;
-  padding: 0 20px;
-  background-color: #0F1035;
+  height: 70px;
+  width: 100%;
+  background-color: #012169; 
   top: 0;
   font-weight: 500;
 }
@@ -13,6 +17,8 @@ header {
 .header-center {
   display: flex;
   align-items: center;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .logo {
@@ -23,16 +29,12 @@ header {
 }
 
 .header-center a {
-  line-height: 65px;
-  padding: 0 20px;
+  line-height: 70px;
   color: white;
   text-decoration: none;
   transition: all 0.5s;
 }
 
-.header-center a:hover {
-  background-color: #365486;
-}
 
 @media screen and (max-width: 768px) {
   .header-center {

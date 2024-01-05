@@ -6,11 +6,14 @@
 }
 
 .jumbotron {
-  background-color: white;
-  display: grid;
   grid-template-columns: 50% auto;
-  padding: 4em;
-  gap: 250px;
+  display: grid;
+  height: 433px;
+  padding: 2em; 
+  gap: 10px; 
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 .text {
@@ -20,21 +23,25 @@
 }
 
 .text h1 {
-  color: #365486;
-  font-size: 60px;
+  color: #012169;
+  font-size: 50px;
+  display: inline;
+  border-bottom: 8px solid #F0B323;
 }
 
 .text h2 {
-  color: #7fc7d9;
+  padding-top:15px;
+  color: #F7630c;
   font-size: 20px;
 }
 
 .text h3 {
-  margin-top: 20px;
+  margin-top: 25px;
   color: rgb(38, 62, 83);
 }
 
 .text p {
+  font-style:italic;
   color: rgb(38, 62, 83);
 }
 

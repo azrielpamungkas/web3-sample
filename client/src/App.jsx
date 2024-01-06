@@ -21,7 +21,6 @@ function App() {
         {
           path: "/voting",
           element: <VoteForm/>,
-          element: <Voter />,
         },
         {
           path: "/about",

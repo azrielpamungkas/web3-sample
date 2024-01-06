@@ -1,9 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./components/HomePage";
-import VoteForm from "./components/VoteForm";
 import AboutPage from './components/AboutPage';
 import StatisticPage from './components/StatisticPage';
+import Vote from "./components/Vote";
+import VoteForm from "./components/VoteForm";
+import AddCandidate from "./components/AddCandidate";
+
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +21,7 @@ function App() {
         {
           path: "/voting",
           element: <VoteForm/>,
+          element: <Voter />,
         },
         {
           path: "/about",
@@ -27,6 +31,13 @@ function App() {
           path: "/statistic",
           element: <StatisticPage/>
         }
+
+          element: <Statistic />,
+        },
+        {
+          path: "/dashboard",
+          element: <AddCandidate />,
+        },
       ],
     },
   ]);

@@ -30,9 +30,6 @@ function App() {
         {
           path: "/statistic",
           element: <StatisticPage/>
-        }
-
-          element: <Statistic />,
         },
         {
           path: "/dashboard",

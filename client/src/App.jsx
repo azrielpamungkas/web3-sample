@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
-import Vote from "./components/Vote";
-import Voter from "./components/Voter";
-import About from './components/About';
-import Statistic from './components/Statistic';
+import Home from "./components/HomePage";
+import VoteForm from "./components/VoteForm";
+import AboutPage from './components/AboutPage';
+import StatisticPage from './components/StatisticPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -13,19 +13,19 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Vote />,
+          element: <Home />,
         },
         {
           path: "/voting",
-          element: <Voter/>,
+          element: <VoteForm/>,
         },
         {
           path: "/about",
-          element: <About />,
+          element: <AboutPage />,
         },
         {
           path: "/statistic",
-          element: <Statistic/>
+          element: <StatisticPage/>
         }
       ],
     },

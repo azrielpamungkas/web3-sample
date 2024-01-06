@@ -3,7 +3,7 @@ import RootLayout from "./layouts/RootLayout";
 import Home from "./components/HomePage";
 import AboutPage from './components/AboutPage';
 import StatisticPage from './components/StatisticPage';
-import Vote from "./components/Vote";
+// import Vote from "./components/Vote";
 import VoteForm from "./components/VoteForm";
 import AddCandidate from "./components/AddCandidate";
 

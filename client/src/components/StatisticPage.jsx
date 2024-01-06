@@ -54,6 +54,9 @@ export const options = {
       display: true,
       text: "Data Pemilihan",
     },
+    // options: {
+    //   maintainAspectRatio : false,
+    // }
   },
 };
 
